@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+:root[data-theme="light"] {
+  --text: #060506;
+  --background: #f6f4f6;
+  --primary: #cddff4;
+  --secondary: #ead7f1;
+  --accent: #e7e7d4;
+}
+:root[data-theme="dark"] {
+  --text: #faf9fa;
+  --background: #0b090b;
+  --primary: #0b1d32;
+  --secondary: #220f2a;
+  --accent: #2a2a18;
+}
+.btn-primary {
+  background-color: var(--primary);
+  color: var(--text);
+  
+}
+
+
+
+/* Example usage */
+body {
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Signika%20Negative:700|Signika%20Negative:400');
+
+body {
+  font-family: 'Signika Negative';
+  font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Signika Negative';
+  font-weight: 700;
+}
+
+html {font-size: 100%;} /* 16px */
+
+h1 {font-size: 4.210rem; /* 67.36px */}
+
+h2 {font-size: 3.158rem; /* 50.56px */}
+
+h3 {font-size: 2.369rem; /* 37.92px */}
+
+h4 {font-size: 1.777rem; /* 28.48px */}
+
+h5 {font-size: 1.333rem; /* 21.28px */}
+
+small {font-size: 0.750rem; /* 12px */}
